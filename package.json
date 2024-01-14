@@ -1,0 +1,11 @@
+
+{
+  "name": "devproject",
+  "version": "1.0.0",
+  "description": "Internship Assesment Project Completed Sucessfully",
+  "main": "index.js",
+   "dependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+}
