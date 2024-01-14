@@ -21,11 +21,11 @@
 
     - name: Clone Node.js app repository
       git:
-        repo: 
-        dest: /var/www/html/nodejs-demo
+        repo: https://github.com/APSARA-2023/Dev-Repo.git
+        dest: /var/www/html/dev-app-demo
 
     - name: Build Docker image
-      command: docker build -t node-app /var/www/html/nodejs-demo
+      command: docker build -t dev-app /var/www/html/dev-app-demo
 
     - name: Run Docker container
-      command: docker run -d -p 3000:3000 --name node-app-container node-app
+      command: docker run -d -p 3000:3000 --name dev-app-container dev-app
